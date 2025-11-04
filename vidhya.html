@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Review Website</title>
+<link rel="stylesheet" href="css/vidhya.css">
+</head>
+<body>
+
+<header>
+  <h1>🎬 Movie Review Hub</h1>
+  <p>Share your thoughts on your favorite movies</p>
+</header>
+
+<section class="movies">
+  <h2>Popular Movies</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x400/?batman" alt="Batman">
+      <h3>Batman</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x400/?spiderman" alt="Spiderman">
+      <h3>Spiderman</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x400/?inception" alt="Inception">
+      <h3>Inception</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x400/?avatar" alt="Avatar">
+      <h3>Avatar</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="review-section">
+  <h2>Submit Your Review</h2>
+
+  <form id="reviewForm">
+    <input type="text" id="movieName" placeholder="Movie Name" required>
+    <input type="text" id="userName" placeholder="Your Name" required>
+
+    <select id="rating" required>
+      <option value="">Rating</option>
+      <option>⭐</option>
+      <option>⭐⭐</option>
+      <option>⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <textarea id="reviewText" rows="4" placeholder="Write your review..." required></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+<section class="reviews">
+  <h2>User Reviews</h2>
+  <div id="reviewList"></div>
+</section>
+
+<footer>
+  <p>🎞️ Movie Review Website | Designed by You</p>
+</footer>
+
+<script src="css/javascript/vidhya.js"></script>
+</body>
+</html>
